@@ -5,7 +5,6 @@ pipeline {
       steps {
         echo 'Build completed'
         retry(count: 3) {
-          sh 'wwww'
           echo 'Trying to build'
         }
 
